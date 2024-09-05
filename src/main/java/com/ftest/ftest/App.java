@@ -5,15 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.boot.greetingapp.GreetingappApplication;
-
 @RestController
 @SpringBootApplication
 
 public class App {
 	
     public static void main(String[] args) {
-    	SpringApplication.run(GreetingappApplication.class, args);
+    	SpringApplication.run(App.class, args);
     }
     @GetMapping("/hello")
     public String hello() {
